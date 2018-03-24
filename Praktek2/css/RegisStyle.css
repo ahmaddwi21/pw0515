@@ -1,0 +1,20 @@
+body
+{
+	background-color: pink;
+}
+
+.form
+{
+	margin-left: 25%;
+	line-height: 30px;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.button
+{
+	padding-top: 3%;
+}
