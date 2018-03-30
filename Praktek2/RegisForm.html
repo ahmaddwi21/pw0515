@@ -5,32 +5,89 @@
 	<link rel="stylesheet" type="text/css" href="css/RegisStyle.css">
 </head>
 <body>
-	<form>
-		<h1>Form Registrasi</h1>
+	<form class="form-basic" method="post" action="#">
 
-		<div class="form">
-		Nama Lengkap : <br>
-		<input type="text" name="FullName" size="35%"><br>
-		Email : <br>
-		<input type="text" name="Email" size="35%"><br>
-		Password : <br>
-		<input type="password" name="Password" size="35%"><br>
-		Konfirmasi Password : <br>
-		<input type="password" name="Confirm" size="35%"><br>
-		Jenis Kelamin : <br>
-		<input type="radio" name="Gender1">Laki-laki<br>
-		<input type="radio" name="Gender2">Perempuan<br>
-		Alamat : <br>
-		<input type="text" name="alamat" size="35%"><br>
-		Kode Pos : <br>
-		<input type="text" name="KodePos" size="35%"><br>
-		Mobile Phone : <br>
-		<input type="text" name="mobile" size="35%"><br>
-			<div class="button">
-				<input type="submit" name="submit" value="Submit">
-				<input type="submit" name="cancel" value="Cancel">
+		<div class="form-title-row">
+			<h1>Form Registrasi</h1>	
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Nama Lengkap</span>
+				<input type="text" name="FullName" placeholder="Nama Lenkap">
+			</label> 
+			
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Email</span>
+				<input type="text" name="Email" placeholder="Email">
+			</label>	
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Password</span>
+				<input type="password" name="Password" placeholder="Password">
+			</label>	
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Konfirmasi Password</span>
+				<input type="password" name="Confirm" placeholder="Confirm Password">
+			</label>	
+		</div>
+
+		<div class="form-row">
+			<label><span>Jenis Kelamin</span></label>
+			<div class="form-radio-buttons">
+
+				<div>
+					<label>
+						<input type="radio" name="Gender" checked>
+						<span>Laki-laki</span>
+					</label>
+				</div>
+					
+				<div>
+					<label>
+						<input type="radio" name="Gender">
+						<span>Perempuan</span>
+					</label>
+				</div>
+				
 			</div>
 		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Alamat</span>  
+				<textarea name="alamat"></textarea>
+			</label>	
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Kode Pos</span>
+				<input type="text" name="KodePos" placeholder="Kode Pos">
+			</label>	
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Mobile Phone</span>
+				<input type="text" name="mobile" placeholder="Mobile Phone">
+			</label>	
+		</div>
+			
+		<div class="form-row">
+
+				<button type="submit" name="submit" value="Submit">Submit</button>
+
+		</div>
+
 	</form>
 
 </body>
